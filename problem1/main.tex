@@ -1,44 +1,85 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
 
-\title{Problem 1 (PI)}
-\author{Baiyu Huo}
-\date{July 2019}
-
-\usepackage{natbib}
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
 \usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{natbib}
 \usepackage{amsmath}
 
+
+
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms}
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+	language        = Python,
+	frame           = lines, 
+	basicstyle      = \footnotesize,
+	keywordstyle    = \color{blue},
+	stringstyle     = \color{green},
+	commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+
+% Edit these as appropriate
+\newcommand\course{SOEN 6481}
+\newcommand\hwnumber{1}                  % <-- homework number
+\newcommand\NetIDa{Baiyu Huo}           % <-- NetID of person #1
+\newcommand\NetIDb{40076004}           % <-- NetID of person #2 (Comment this line out for problem sets)
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa}
+\lhead{\NetIDa\\\NetIDb}                 % <-- Comment this line out for problem sets (make sure you are person #1)
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ July 5, 2019}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+
 \begin{document}
-
-\maketitle
-
-\section{Description}
-The number PI is a mathematical constant. It used to describe the ratio of the circles' circumference and its diameter, and nowadays it has been used by many formulas in both mathematics and physics. It is an Irrational number which means it can not be present as the ratio of two integers. What's more, PI is also a transcendental number, which means that "it is not the solution of any non-constant polynomial equation with rational coefficients".\citep{wiki:pi} It approximately equals to 3.141592653.
-
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=0.2]{PI.png}
-\caption{PI}
-\label{fig:universe}
-\end{figure}
-
-\paragraph{Difination}
-let C equals circle's circumference, d equals circle's diameter, then PI equals the radio of C and d.
-
-
-\begin{center}
- $PI=\frac{C}{d}$
-\end{center}
-
-\paragraph{Usage} 
-Geometry and trigonometry, Eigenvalues, Inequalities, Fourier transform and Heisenberg uncertainty principle, Gaussian integrals,Projective geometry, Topology etc.
-
-
-
-\bibliographystyle{plain}
-\bibliography{references}
+	
+	\section{Description}
+	
+	The number PI is a mathematical constant. It used to describe the ratio of the circles' circumference and its diameter, and nowadays it has been used by many formulas in both mathematics and physics. It is an Irrational number which means it can not be present as the ratio of two integers. What's more, PI is also a transcendental number, which means that "it is not the solution of any non-constant polynomial equation with rational coefficients".\citep{wiki:pi} It approximately equals to 3.141592653.
+	
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.4]{PI.png}
+		\caption{PI (Source: Google)}
+		\label{fig:universe}
+	\end{figure}
+	
+	\paragraph{Difination}
+	let C equals circle's circumference, d equals circle's diameter, then PI equals the radio of C and d.
+	
+	
+	\begin{center}
+		$PI=\frac{C}{d}$
+	\end{center}
+	
+	\paragraph{Usage} 
+	Geometry and trigonometry, Eigenvalues, Inequalities, Fourier transform and Heisenberg uncertainty principle, Gaussian integrals,Projective geometry, Topology etc.
+	
+	
+	
+	\bibliographystyle{plain}
+	\bibliography{references}
 \end{document}
 
 
