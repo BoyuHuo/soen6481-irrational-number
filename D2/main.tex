@@ -25,8 +25,9 @@
 \usepackage{sectsty}
 \usepackage{url, lipsum}
 \usepackage{tgbonum}
-\usepackage{hyperref}
+\usepackage [colorlinks,linkcolor=blue]{hyperref}
 \usepackage{xcolor}
+
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
@@ -49,239 +50,276 @@
 %-------------------------------------------------------------------------------
 
 \begin{document}
-{\fontfamily{cmr}\selectfont
-\title{ \normalsize \textsc{}
-		\\ [2.0cm]
-		\HRule{0.5pt} \\
-		\LARGE \textbf{\uppercase{ETERNITY: NUMBERS - PI}
-		\HRule{2pt} \\ [0.5cm]
-		\normalsize July 27, 2019 \vspace*{5\baselineskip}}
+	{\fontfamily{cmr}\selectfont
+		\title{ \normalsize \textsc{}
+			\\ [2.0cm]
+			\HRule{0.5pt} \\
+			\LARGE \textbf{\uppercase{ETERNITY: NUMBERS - PI}
+				\HRule{2pt} \\ [0.5cm]
+				\normalsize July 27, 2019 \vspace*{5\baselineskip}}
 		}
-
-\date{}
-
-\author{
-		Baiyu Huo 40076004 \\ 
-		Concordia University \\
-		Department of Computer Engineering }
-
-\maketitle
-\tableofcontents
-\newpage
-
-%-------------------------------------------------------------------------------
-% Section title formatting
-\sectionfont{\scshape}
-%-------------------------------------------------------------------------------
-
-%-------------------------------------------------------------------------------
-% BODY
-%-------------------------------------------------------------------------------
-
-	
-\chapter{User Story} 
-
-\section{US-1 Basic calculation}
-
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US1 - Basic calculation} \\
- \hline
- \textbf {Story ID}& US1 \\
- \hline
-   \textbf{Priority} & HIGH \\
- \hline
-  \textbf{Description}   & As an user of calculator, I want to use the basic operands so I can do the calculation such as addition, subtraction, multiplication and division  \\
-\hline
-     \textbf{Acceptance}& 
-     \begin{itemize}
-     \item User can choose the operator from + ,- ,* ,/ in his or her calculation task.
-     \item The result of calculation should be correct e.g. 5 + 2 = 7
-     \item The priority of / and * are higher than + and -
-     \item When calculate one number divided by another, the denominator cannot be 0, if it is, the result shows infinity 
-     \end{itemize}
-     \\
-\hline
- \textbf{Estimate} & 4 points \\
- \hline
-\textbf{Constrains}& the operators cannot be appeared in a row such as 5+/*3 or 3++--5 \\
- \hline
-\end{tabular}
-
-
-\section{US-2 Store and recover the result or number}
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US2 - Store and recover the result and number } \\
- \hline
- \textbf {Story ID}& US2 \\
- \hline
- \textbf{Priority} & MEDIUM \\
- \hline
-  \textbf{Description}   & As an user of calculator, I want to  store a result or number into the memory so that I can recover it when I need it \\
- \hline
-\textbf{Acceptance}&
-   \begin{itemize}
-     \item User can store a number or a result any time he or she wants
-     \item The recovery can be used as a number in the calculation
-     \item When the 4th memory number comes in, the 1st number will be erased 
-     \end{itemize}
-\\
- \hline
- \textbf{Estimate} & 2 points\\
- \hline
- \textbf{Constrains}& It can only store the result number not the operators  \\
- \hline
-\end{tabular}
-
-
-\section{US-3 Clear the result }
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US3 - Clear the result } \\
- \hline
- \textbf {Story ID}& US3 \\
-  \hline
-  \textbf{Priority} & LOW \\
- \hline
-  \textbf{Description}   & As an user of calculator, I want to clear the previous calculation so that I can start a new calculation from beginning \\
- \hline
- \textbf{Acceptance}& 
-  \begin{itemize}
-     \item User can clear the result of a calculation and start a new one
-     \item It can not only clear the result number but also the calculator (in the middle of the calculation)
-\end{itemize}
- 
- \\
- \hline
- \textbf{Estimate} & 1 point \\
- \hline
- \textbf{Constrains}& None \\
- \hline
-\end{tabular}
-
-\section{US-4 Get value of PI}
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US4 - Get the value of PI} \\
- \hline
- \textbf {Story ID}& US4  \\
- \hline
- \textbf{Priority} & HIGH \\
- \hline
- \textbf{Description}   & As an user of calculator, I want to get a PI, which keeps at least 6 decimal places, once I click the button PI \\
- \hline
- \textbf{Acceptance}& 
-
- \begin{itemize}
-     \item  the user press the pi button the number of 3.141592 should be returned
-     \item  the pi can be applied in any kinds calculation as a number
-\end{itemize}
-\\
- \hline
- \textbf{Estimate} & 2 points  \\
- \hline
- \textbf{Constrains}& the display accuracy should at least keep 6 decimal places  \\
- \hline
-\end{tabular}
-
-\section{US-5 Calculate the area of circle }
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US5 - Calculate the area of circle } \\
- \hline
- \textbf {Story ID}& US5  \\
- \hline
- \textbf{Priority} & MEDIUM \\
- \hline
-  \textbf{Description}   & As an user of calculator, I want to calculate the are of a circle just by input the r so that I can calculate the area of circle very fast  \\
-  \hline
-  \textbf{Acceptance}& 
-   \begin{itemize}
-     \item  there is a formula pi*R*R in the memory, the user can input only the value of r to get the result 
-     \item  the result should be correct and precise within 15 digital numbers.
-\end{itemize}
-  \\
- \hline
- \textbf{Estimate} & 4 points   \\
- \hline
- \textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0) \\
- \hline
-\end{tabular}
-
-
-\section{US-6 Calculate the circumference of the circle}
-\begin{tabular}{ |p{4cm}|p{10cm}| }
- \hline
- \multicolumn{2}{|c|}{US6 - Calculate the circumference of the circle } \\
- \hline
- \textbf {Story ID}& US6 \\
- \hline
- \textbf{Priority} & MEDIUM \\
- \hline
-  \textbf{Description}   & As an user of calculator, I want to calculate the are of a circumference just by input the r so that I can calculate the circumference of circle very fast  \\
-  \hline
-  \textbf{Acceptance}&
-     \begin{itemize}
-     \item  there is a formula 2*pi*R in the memory, the user can input only the value of r to get the result 
-     \item  the result should be correct and precise within 15 digital numbers.
-\end{itemize}
-  \\
- \hline
- \textbf{Estimate} & 4 points\\
- \hline
- \textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0)   \\
- \hline
-\end{tabular}
-
-\chapter{Backward Traceability Matrix } 
-
-\section{Traceability Table}
-\begin{table}[!ht]
-\centering
-\addtolength{\leftskip} {-2cm}
-\addtolength{\rightskip}{-2cm}
-
-\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
-
-\hline
-& Source 1& Source 2 & Source 3 \\
-\hline
-US-1 & Prototype in real life & Project description& \\
-\hline
-US-2 & Prototype in real life&Internet&\\
-\hline
-US-3& Prototype in real life&&\\
-\hline
-US-4& Interview: Yanpeng Wang&project description& \\
-\hline
-US-5& Interview: Yanpeng Wang &&\\
-\hline
-
-US-6& Interview: Yanpeng Wang &&\\
-\hline
-
-US-7&&&\\
-\hline
-
-US-8&&&\\
-\hline
-
-\hline
-
-\end{tabular}
-\caption{Backward Traceability Matrix}
-\end{table}
-
-\section{Traceability Source}
-
-
-%-------------------------------------------------------------------------------
-% REFERENCES
-%-------------------------------------------------------------------------------
-\newpage
-\section*{References}
-}
+		
+		\date{}
+		
+		\author{
+			Baiyu Huo 40076004 \\ 
+			Concordia University \\
+			Department of Computer Engineering }
+		
+		\maketitle
+		\tableofcontents
+		\newpage
+		
+		%-------------------------------------------------------------------------------
+		% Section title formatting
+		\sectionfont{\scshape}
+		%-------------------------------------------------------------------------------
+		
+		%-------------------------------------------------------------------------------
+		% BODY
+		%-------------------------------------------------------------------------------
+		
+		
+		\chapter{User Story} 
+		
+		\section{US-1 Basic calculation}
+		
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US1 - Basic calculation} \\
+			\hline
+			\textbf {Story ID}& US1 \\
+			\hline
+			\textbf{Priority} & HIGH \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to use the basic operands so I can do the calculation such as addition, subtraction, multiplication and division  \\
+			\hline
+			\textbf{Acceptance}& 
+			\begin{itemize}
+				\item User can choose the operator from + ,- ,* ,/ in his or her calculation task.
+				\item The result of calculation should be correct e.g. 5 + 2 = 7
+				\item The priority of / and * are higher than + and -
+				\item When calculate one number divided by another, the denominator cannot be 0, if it is, the result shows infinity 
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 4 points \\
+			\hline
+			\textbf{Constrains}& the operators cannot be appeared in a row such as 5+/*3 or 3++--5 \\
+			\hline
+		\end{tabular}
+		
+		
+		\section{US-2 Store and recover the result or number}
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US2 - Store and recover the result and number } \\
+			\hline
+			\textbf {Story ID}& US2 \\
+			\hline
+			\textbf{Priority} & MEDIUM \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to  store a result or number into the memory so that I can recover it when I need it \\
+			\hline
+			\textbf{Acceptance}&
+			\begin{itemize}
+				\item User can store a number or a result any time he or she wants
+				\item The recovery can be used as a number in the calculation
+				\item When the 4th memory number comes in, the 1st number will be erased 
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 2 points\\
+			\hline
+			\textbf{Constrains}& It can only store the result number not the operators  \\
+			\hline
+		\end{tabular}
+		
+		
+		\section{US-3 Clear the result }
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US3 - Clear the result } \\
+			\hline
+			\textbf {Story ID}& US3 \\
+			\hline
+			\textbf{Priority} & LOW \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to clear the previous calculation so that I can start a new calculation from beginning \\
+			\hline
+			\textbf{Acceptance}& 
+			\begin{itemize}
+				\item User can clear the result of a calculation and start a new one
+				\item It can not only clear the result number but also the calculator (in the middle of the calculation)
+			\end{itemize}
+			
+			\\
+			\hline
+			\textbf{Estimate} & 1 point \\
+			\hline
+			\textbf{Constrains}& None \\
+			\hline
+		\end{tabular}
+		
+		\section{US-4 Get value of PI}
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US4 - Get the value of PI} \\
+			\hline
+			\textbf {Story ID}& US4  \\
+			\hline
+			\textbf{Priority} & HIGH \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to get a PI, which keeps at least 6 decimal places, once I click the button PI \\
+			\hline
+			\textbf{Acceptance}& 
+			
+			\begin{itemize}
+				\item  the user press the pi button the number of 3.141592 should be returned
+				\item  the pi can be applied in any kinds calculation as a number
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 2 points  \\
+			\hline
+			\textbf{Constrains}& the display accuracy should at least keep 6 decimal places  \\
+			\hline
+		\end{tabular}
+		
+		\section{US-5 Calculate the area of circle }
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US5 - Calculate the area of circle } \\
+			\hline
+			\textbf {Story ID}& US5  \\
+			\hline
+			\textbf{Priority} & MEDIUM \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to calculate the are of a circle just by input the r so that I can calculate the area of circle very fast  \\
+			\hline
+			\textbf{Acceptance}& 
+			\begin{itemize}
+				\item  there is a formula pi*R*R in the memory, the user can input only the value of r to get the result 
+				\item  the result should be correct and precise within 15 digital numbers.
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 4 points   \\
+			\hline
+			\textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0) \\
+			\hline
+		\end{tabular}
+		
+		
+		\section{US-6 Calculate the circumference of the circle}
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US6 - Calculate the circumference of the circle } \\
+			\hline
+			\textbf {Story ID}& US6 \\
+			\hline
+			\textbf{Priority} & MEDIUM \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want to calculate the are of a circumference just by input the r so that I can calculate the circumference of circle very fast  \\
+			\hline
+			\textbf{Acceptance}&
+			\begin{itemize}
+				\item  there is a formula 2*pi*R in the memory, the user can input only the value of r to get the result 
+				\item  the result should be correct and precise within 15 digital numbers.
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 4 points\\
+			\hline
+			\textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0)   \\
+			\hline
+		\end{tabular}
+		
+		\section{US-7 Calculate the Trigonometric functions}
+		\begin{tabular}{ |p{4cm}|p{10cm}| }
+			\hline
+			\multicolumn{2}{|c|}{US7 - Calculate the Trigonometric functions} \\
+			\hline
+			\textbf {Story ID}& US7 \\
+			\hline
+			\textbf{Priority} & LOW \\
+			\hline
+			\textbf{Description}   & As an user of calculator, I want use trigonometric functions such as sine, the cosine, and the tangent, so I can do the calculation for the trigonometric problems.
+			\\
+			\hline
+			\textbf{Acceptance}&
+			\begin{itemize}
+				\item  the calculation should provides functions include sine,cosine and tangent, and can use the pi to show the angle.
+				\item  the result should be correct and precise within 15 digital numbers.
+			\end{itemize}
+			\\
+			\hline
+			\textbf{Estimate} & 8 points\\
+			\hline
+			\textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0)   \\
+			\hline
+		\end{tabular}
+		
+		\chapter{Backward Traceability Matrix } 
+		
+		\section{Traceability Table}
+		\begin{table}[!ht]
+			\centering
+			\addtolength{\leftskip} {-2cm}
+			\addtolength{\rightskip}{-2cm}
+			
+			\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+				
+				\hline
+				& Source 1& Source 2 & Source 3 \\
+				\hline
+				US-1 & Prototype in real life & Project description& \\
+				\hline
+				US-2 & Prototype in real life&Internet&\\
+				\hline
+				US-3& Prototype in real life&&\\
+				\hline
+				US-4& Interview: Yanpeng Wang&project description& \\
+				\hline
+				US-5& Interview: Yanpeng Wang &&\\
+				\hline
+				
+				US-6& Interview: Yanpeng Wang &&\\
+				\hline
+				
+				US-7& Interview: Yanpeng Wang &&\\
+				\hline
+				
+				\hline
+				
+			\end{tabular}
+			\caption{Backward Traceability Matrix}
+		\end{table}
+		
+		\section{Traceability Source}
+		
+		\begin{itemize}
+			\item  US-2 Internet: \href{ https://www.oodesign.com/memento-pattern-calculator-example-java-sourcecode.html}{ https://www.oodesign.com/memento-pattern-calculator-example-java-sourcecode.html} 
+			
+			\item Project Description:  \href{http://users.encs.concordia.ca/~kamthan/courses/soen-6481/project\_description.pdf}{
+				http://users.encs.concordia.ca/~kamthan/courses/soen-6481/ project\_description.pdf
+			}
+			\item Interview: Yanpeng Wang: \href{ }{
+				D1 Report Chapter - 2
+			}
+			
+		\end{itemize}
+		
+		
+		
+		
+		
+		%-------------------------------------------------------------------------------
+		% REFERENCES
+		%-------------------------------------------------------------------------------
+		
+		
+	}
 \end{document}
 
 %-------------------------------------------------------------------------------
