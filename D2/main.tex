@@ -1,0 +1,361 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[a4paper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+\usepackage{tgbonum}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+%\pagestyle{fancy}
+%\fancyhf{}
+%\setlength\headheight{15pt}
+%\fancyhead[L]{Student ID: 1034511}
+%\fancyhead[R]{Anglia Ruskin University}
+%\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+{\fontfamily{cmr}\selectfont
+\title{ \normalsize \textsc{}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{ETERNITY: NUMBERS - PI}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize July 27, 2019 \vspace*{5\baselineskip}}
+		}
+
+\date{}
+
+\author{
+		Baiyu Huo 40076004 \\ 
+		Concordia University \\
+		Department of Computer Engineering }
+
+\maketitle
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------------------------------
+% Section title formatting
+\sectionfont{\scshape}
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% BODY
+%-------------------------------------------------------------------------------
+
+	
+\chapter{User Story} 
+
+\section{US-1 Basic calculation}
+
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US1 - Basic calculation} \\
+ \hline
+ \textbf {Story ID}& US1 \\
+ \hline
+   \textbf{Priority} & HIGH \\
+ \hline
+  \textbf{Description}   & As an user of calculator, I want to use the basic operands so I can do the calculation such as addition, subtraction, multiplication and division  \\
+\hline
+     \textbf{Acceptance}& 
+     \begin{itemize}
+     \item User can choose the operator from + ,- ,* ,/ in his or her calculation task.
+     \item The result of calculation should be correct e.g. 5 + 2 = 7
+     \item The priority of / and * are higher than + and -
+     \item When calculate one number divided by another, the denominator cannot be 0, if it is, the result shows infinity 
+     \end{itemize}
+     \\
+\hline
+ \textbf{Estimate} & 4 points \\
+ \hline
+\textbf{Constrains}& the operators cannot be appeared in a row such as 5+/*3 or 3++--5 \\
+ \hline
+\end{tabular}
+
+
+\section{US-2 Store and recover the result or number}
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US2 - Store and recover the result and number } \\
+ \hline
+ \textbf {Story ID}& US2 \\
+ \hline
+ \textbf{Priority} & MEDIUM \\
+ \hline
+  \textbf{Description}   & As an user of calculator, I want to  store a result or number into the memory so that I can recover it when I need it \\
+ \hline
+\textbf{Acceptance}&
+   \begin{itemize}
+     \item User can store a number or a result any time he or she wants
+     \item The recovery can be used as a number in the calculation
+     \item When the 4th memory number comes in, the 1st number will be erased 
+     \end{itemize}
+\\
+ \hline
+ \textbf{Estimate} & 2 points\\
+ \hline
+ \textbf{Constrains}& It can only store the result number not the operators  \\
+ \hline
+\end{tabular}
+
+
+\section{US-3 Clear the result }
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US3 - Clear the result } \\
+ \hline
+ \textbf {Story ID}& US3 \\
+  \hline
+  \textbf{Priority} & LOW \\
+ \hline
+  \textbf{Description}   & As an user of calculator, I want to clear the previous calculation so that I can start a new calculation from beginning \\
+ \hline
+ \textbf{Acceptance}& 
+  \begin{itemize}
+     \item User can clear the result of a calculation and start a new one
+     \item It can not only clear the result number but also the calculator (in the middle of the calculation)
+\end{itemize}
+ 
+ \\
+ \hline
+ \textbf{Estimate} & 1 point \\
+ \hline
+ \textbf{Constrains}& None \\
+ \hline
+\end{tabular}
+
+\section{US-4 Get value of PI}
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US4 - Get the value of PI} \\
+ \hline
+ \textbf {Story ID}& US4  \\
+ \hline
+ \textbf{Priority} & HIGH \\
+ \hline
+ \textbf{Description}   & As an user of calculator, I want to get a PI, which keeps at least 6 decimal places, once I click the button PI \\
+ \hline
+ \textbf{Acceptance}& 
+
+ \begin{itemize}
+     \item  the user press the pi button the number of 3.141592 should be returned
+     \item  the pi can be applied in any kinds calculation as a number
+\end{itemize}
+\\
+ \hline
+ \textbf{Estimate} & 2 points  \\
+ \hline
+ \textbf{Constrains}& the display accuracy should at least keep 6 decimal places  \\
+ \hline
+\end{tabular}
+
+\section{US-5 Calculate the area of circle }
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US5 - Calculate the area of circle } \\
+ \hline
+ \textbf {Story ID}& US5  \\
+ \hline
+ \textbf{Priority} & MEDIUM \\
+ \hline
+  \textbf{Description}   & As an user of calculator, I want to calculate the are of a circle just by input the r so that I can calculate the area of circle very fast  \\
+  \hline
+  \textbf{Acceptance}& 
+   \begin{itemize}
+     \item  there is a formula pi*R*R in the memory, the user can input only the value of r to get the result 
+     \item  the result should be correct and precise within 15 digital numbers.
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 4 points   \\
+ \hline
+ \textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0) \\
+ \hline
+\end{tabular}
+
+
+\section{US-6 Calculate the circumference of the circle}
+\begin{tabular}{ |p{4cm}|p{10cm}| }
+ \hline
+ \multicolumn{2}{|c|}{US6 - Calculate the circumference of the circle } \\
+ \hline
+ \textbf {Story ID}& US6 \\
+ \hline
+ \textbf{Priority} & MEDIUM \\
+ \hline
+  \textbf{Description}   & As an user of calculator, I want to calculate the are of a circumference just by input the r so that I can calculate the circumference of circle very fast  \\
+  \hline
+  \textbf{Acceptance}&
+     \begin{itemize}
+     \item  there is a formula 2*pi*R in the memory, the user can input only the value of r to get the result 
+     \item  the result should be correct and precise within 15 digital numbers.
+\end{itemize}
+  \\
+ \hline
+ \textbf{Estimate} & 4 points\\
+ \hline
+ \textbf{Constrains}& the r must larger than 0 (since it doesn't make sense in the real life if the r is smaller than 0)   \\
+ \hline
+\end{tabular}
+
+\chapter{Backward Traceability Matrix } 
+
+\section{Traceability Table}
+\begin{table}[!ht]
+\centering
+\addtolength{\leftskip} {-2cm}
+\addtolength{\rightskip}{-2cm}
+
+\begin{tabular}{|p{2cm}|p{4cm}|p{4cm}|p{4cm}|}
+
+\hline
+& Source 1& Source 2 & Source 3 \\
+\hline
+US-1 & Prototype in real life & Project description& \\
+\hline
+US-2 & Prototype in real life&Internet&\\
+\hline
+US-3& Prototype in real life&&\\
+\hline
+US-4& Interview: Yanpeng Wang&project description& \\
+\hline
+US-5& Interview: Yanpeng Wang &&\\
+\hline
+
+US-6& Interview: Yanpeng Wang &&\\
+\hline
+
+US-7&&&\\
+\hline
+
+US-8&&&\\
+\hline
+
+\hline
+
+\end{tabular}
+\caption{Backward Traceability Matrix}
+\end{table}
+
+\section{Traceability Source}
+
+
+%-------------------------------------------------------------------------------
+% REFERENCES
+%-------------------------------------------------------------------------------
+\newpage
+\section*{References}
+}
+\end{document}
+
+%-------------------------------------------------------------------------------
+% SNIPPETS
+%-------------------------------------------------------------------------------
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{file_name}
+%	\caption{}
+%	\centering
+%	\label{label:file_name}
+%\end{figure}
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{graph}
+%	\caption{Blood pressure ranges and associated level of hypertension (American Heart Association, 2013).}
+%	\centering
+%	\label{label:graph}
+%\end{figure}
+
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%	\vspace{-40pt}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{file_name}
+%	\end{center}
+%	\vspace{-20pt}
+%	\caption{}
+%	\label{label:file_name}
+%\end{wrapfigure}
+
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{manometer}
+%	\end{center}
+%	\caption{Aneroid sphygmomanometer with stethoscope (Medicalexpo, 2012).}
+%	\label{label:manometer}
+%\end{wrapfigure}
+
+%\begin{table}[!ht]\footnotesize
+%	\centering
+%	\begin{tabular}{cccccc}
+%	\toprule
+%	\multicolumn{2}{c} {Pearson's correlation test} & \multicolumn{4}{c} {Independent t-test} \\
+%	\midrule	
+%	\multicolumn{2}{c} {Gender} & \multicolumn{2}{c} {Activity level} & \multicolumn{2}{c} {Gender} \\
+%	\midrule
+%	Males & Females & 1st level & 6th level & Males & Females \\
+%	\midrule
+%	\multicolumn{2}{c} {BMI vs. SP} & \multicolumn{2}{c} {Systolic pressure} & \multicolumn{2}{c} {Systolic Pressure} \\
+%	\multicolumn{2}{c} {BMI vs. DP} & \multicolumn{2}{c} {Diastolic pressure} & \multicolumn{2}{c} {Diastolic pressure} \\
+%	\multicolumn{2}{c} {BMI vs. MAP} & \multicolumn{2}{c} {MAP} & \multicolumn{2}{c} {MAP} \\
+%	\multicolumn{2}{c} {W:H ratio vs. SP} & \multicolumn{2}{c} {BMI} & \multicolumn{2}{c} {BMI} \\
+%	\multicolumn{2}{c} {W:H ratio vs. DP} & \multicolumn{2}{c} {W:H ratio} & \multicolumn{2}{c} {W:H ratio} \\
+%	\multicolumn{2}{c} {W:H ratio vs. MAP} & \multicolumn{2}{c} {\% Body fat} & \multicolumn{2}{c} {\% Body fat} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Height} & \multicolumn{2}{c} {Height} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Weight} & \multicolumn{2}{c} {Weight} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Heart rate} & \multicolumn{2}{c} {Heart rate} \\
+%	\bottomrule
+%	\end{tabular}
+%	\caption{Parameters that were analysed and related statistical test performed for current study. BMI - body mass index; SP - systolic pressure; DP - diastolic pressure; MAP - mean arterial pressure; W:H ratio - waist to hip ratio.}
+%	\label{label:tests}
+%\end{table}%\documentclass{article}
+%\usepackage[utf8]{inputenc}
+
+%\title{Weekly Report template}
+%\author{gandhalijuvekar }
+%\date{January 2019}
+
+%\begin{document}
+
+%\maketitle
+
+%\section{Introduction}
+
+%\end{document}
