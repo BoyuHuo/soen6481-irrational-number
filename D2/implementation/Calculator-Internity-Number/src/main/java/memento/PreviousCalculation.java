@@ -7,7 +7,6 @@ public interface PreviousCalculation {
     double getSecondNumber();
     char getOperator();
     double getResult();
-    Calculator getEntireState();
     boolean getIsFirst();
     boolean getIsSecond();
     void setState(Calculator state);

@@ -17,14 +17,14 @@ public class TestCircalRelatedCalculation {
         calculator.setFirstNumber(5);
         calculator.setOperator('a');
         calculator.calculate();
-        assertEquals(78.5398161330304,calculator.getResult());
+        assertEquals(78.539815,calculator.getResult());
     }
     @Test
     public void testCircumferenceCircle(){
         calculator.setFirstNumber(5);
         calculator.setOperator('s');
         calculator.calculate();
-        assertEquals(31.41592645321216,calculator.getResult());
+        assertEquals(31.415926,calculator.getResult());
     }
 
     @After

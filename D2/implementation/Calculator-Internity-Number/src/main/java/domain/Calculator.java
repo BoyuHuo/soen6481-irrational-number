@@ -21,6 +21,8 @@ public class Calculator {
 
     public void setSecondNumber(double secondNumber) {
         this.secondNumber = secondNumber;
+        isSecond = true;
+        calculate();
     }
 
     public double getFirstNumber() {
@@ -29,6 +31,7 @@ public class Calculator {
 
     public void setFirstNumber(double firstNumber) {
         this.firstNumber = firstNumber;
+        isFirst = false;
         MessageCenter.getInstance().formula = firstNumber+"";
     }
 
@@ -96,10 +99,9 @@ public class Calculator {
     }
     public void usePreviousResult(PreviousCalculation memento){
         if(isFirst){
-            firstNumber = memento.getResult();
-        }else if(isSecond = false){
-            secondNumber = memento.getResult();
-            isSecond = true;
+            setFirstNumber(memento.getResult());
+        }else{
+            setSecondNumber(memento.getResult());
         }
     }
 

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Calculator-Internity-Number:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="11059e77-deb6-4e41-b27b-7241b93f5689" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -12,11 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/TestGeneralCalculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="285">
+              <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -24,25 +32,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculationImp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="114">
+              <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
               <folding>
-                <element signature="e#805#806#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#869#870#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/TestGeneralCalculation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#412#413#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#849#850#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="e#1476#1477#0" expanded="true" />
+                <element signature="e#1524#1525#0" expanded="true" />
+                <element signature="e#1568#1569#0" expanded="true" />
+                <element signature="e#1604#1605#0" expanded="true" />
+                <element signature="e#1650#1651#0" expanded="true" />
+                <element signature="e#1690#1691#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/TestCircalRelatedCalculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="76">
+              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,10 +68,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="931">
+              <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="152">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -72,17 +88,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/PI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="-411">
               <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/MessageCenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="81" column="101" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
+            <state relative-caret-position="138">
+              <caret line="170" selection-start-line="170" selection-end-line="170" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,9 +121,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/domain/Calculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+            <state relative-caret-position="169">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
               <folding>
+                <element signature="e#814#815#0" expanded="true" />
+                <element signature="e#843#844#0" expanded="true" />
                 <element signature="e#2986#2987#0" expanded="true" />
                 <element signature="e#3024#3025#0" expanded="true" />
               </folding>
@@ -125,6 +155,7 @@
     <findStrings>
       <find>infini</find>
       <find>Infini</find>
+      <find>memento</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -136,28 +167,30 @@
         <option value="$PROJECT_DIR$/src/PI.java" />
         <option value="$PROJECT_DIR$/src/Message.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/test/TestCircalRelatedCalculation.java" />
         <option value="$PROJECT_DIR$/src/Operations.java" />
         <option value="$PROJECT_DIR$/src/Calculator.java" />
         <option value="$PROJECT_DIR$/src/MessageCenter.java" />
-        <option value="$PROJECT_DIR$/test/TestGeneralCalculation.java" />
         <option value="$PROJECT_DIR$/src/memento/PreviousCalculation.java" />
         <option value="$PROJECT_DIR$/src/domain/Calculator.java" />
         <option value="$PROJECT_DIR$/src/memento/PreviousCalculationImp.java" />
         <option value="$PROJECT_DIR$/src/domain/PI.java" />
         <option value="$PROJECT_DIR$/src/domain/MessageCenter.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/domain/PI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/memento/PreviousCalculation.java" />
+        <option value="$PROJECT_DIR$/test/TestCircalRelatedCalculation.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/domain/Calculator.java" />
         <option value="$PROJECT_DIR$/src/main/java/domain/MessageCenter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/memento/PreviousCalculation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/memento/PreviousCalculationImp.java" />
+        <option value="$PROJECT_DIR$/test/TestGeneralCalculation.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1615" />
-    <option name="height" value="880" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="2019" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -165,6 +198,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,12 +243,6 @@
             <path>
               <item name="Calculator-Internity-Number" type="b2602c69:ProjectViewProjectNode" />
               <item name="Calculator-Internity-Number" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Calculator-Internity-Number" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Calculator-Internity-Number" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,7 +253,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -235,11 +262,12 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564688378008" />
-    <property name="last_opened_file_path" value="D:/0.Work/研究生/JavaCode/RiskGameTeam6" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564699168956" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/META-INF" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -253,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.TestGeneralCalculation">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Calculator-Internity-Number" />
@@ -268,15 +296,6 @@
       <module name="Calculator-Internity-Number" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCircalRelatedCalculation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Calculator-Internity-Number" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestCircalRelatedCalculation" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -300,13 +319,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGeneralCalculation.testAddition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Calculator-Internity-Number" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestGeneralCalculation" />
+      <option name="METHOD_NAME" value="testAddition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.All in Calculator-Internity-Number" />
-        <item itemvalue="JUnit.TestCircalRelatedCalculation.testCircumferenceCircle" />
-        <item itemvalue="JUnit.TestCircalRelatedCalculation" />
         <item itemvalue="JUnit.TestGeneralCalculation" />
+        <item itemvalue="JUnit.TestGeneralCalculation.testAddition" />
+        <item itemvalue="JUnit.All in Calculator-Internity-Number" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.TestCircalRelatedCalculation.testCircumferenceCircle" />
       </list>
     </recent_temporary>
   </component>
@@ -324,26 +353,12 @@
       <workItem from="1564513384986" duration="6178000" />
       <workItem from="1564520791125" duration="9610000" />
       <workItem from="1564632164693" duration="5229000" />
-      <workItem from="1564686598256" duration="1778000" />
+      <workItem from="1564686598256" duration="2088000" />
+      <workItem from="1564688917753" duration="6939000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGeneralCalculation - 2019.07.30 at 19h 37m 01s.xml">
-      <configuration name="TestGeneralCalculation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCircalRelatedCalculation - 2019.07.30 at 19h 37m 16s.xml">
-      <configuration name="TestCircalRelatedCalculation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCircalRelatedCalculation - 2019.07.30 at 19h 37m 30s.xml">
-      <configuration name="TestCircalRelatedCalculation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCircalRelatedCalculation - 2019.07.30 at 19h 38m 24s.xml">
-      <configuration name="TestCircalRelatedCalculation" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCircalRelatedCalculation_testCircumferenceCircle - 2019.07.30 at 19h 39m 43s.xml">
-      <configuration name="TestCircalRelatedCalculation.testCircumferenceCircle" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCircalRelatedCalculation_testCircumferenceCircle - 2019.07.30 at 19h 42m 32s.xml">
       <configuration name="TestCircalRelatedCalculation.testCircumferenceCircle" configurationId="JUnit" />
     </history-entry>
@@ -359,9 +374,24 @@
     <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 15h 10m 37s.xml">
       <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 16h 48m 51s.xml">
+      <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 16h 49m 56s.xml">
+      <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 17h 23m 52s.xml">
+      <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 18h 35m 48s.xml">
+      <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_Calculator-Internity-Number - 2019.08.01 at 18h 38m 12s.xml">
+      <configuration name="All in Calculator-Internity-Number" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35294000" />
+    <option name="totallyTimeSpent" value="42543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,7 +403,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -381,9 +411,9 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26119402" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.31099194" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.3281471" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
@@ -392,8 +422,8 @@
       <window_info anchor="bottom" id="FindBugs-IDEA" order="6" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.33802816" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39886847" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.28712872" />
+      <window_info active="true" anchor="bottom" id="Debug" order="10" visible="true" weight="0.37906647" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" weight="0.32936078" />
@@ -411,6 +441,24 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/domain/MessageCenter.java</url>
+          <line>166</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/TestGeneralCalculation.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Precise.java" />
     <entry file="file://$PROJECT_DIR$/src/PreciseDegree.java" />
@@ -424,67 +472,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="1297" column="29" lean-forward="true" selection-start-line="1297" selection-start-column="29" selection-end-line="1297" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        <state relative-caret-position="171">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestGeneralCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/TestCircalRelatedCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/PI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="-411">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculationImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="28" />
-          <folding>
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -495,21 +510,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/domain/MessageCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="51" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/memento/PreviousCalculationImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+          <folding>
+            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#849#850#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1604#1605#0" expanded="true" />
+            <element signature="e#1650#1651#0" expanded="true" />
+            <element signature="e#1690#1691#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/domain/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
+        <state relative-caret-position="169">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#843#844#0" expanded="true" />
             <element signature="e#2986#2987#0" expanded="true" />
             <element signature="e#3024#3025#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/domain/MessageCenter.java">
+    <entry file="file://$PROJECT_DIR$/test/TestCircalRelatedCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="81" column="101" selection-start-line="81" selection-start-column="101" selection-end-line="81" selection-end-column="101" />
+        <state relative-caret-position="76">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/TestGeneralCalculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -522,10 +597,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>Calculator-Internity-Number:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

@@ -3,42 +3,76 @@ package memento;
 import domain.Calculator;
 
 public class PreviousCalculationImp implements PreviousCalculation {
-    private Calculator state;
+    private double firstNumber = 0;
+    private double secondNumber = 0;
+    private double result = 0;
+    private char operator = '@';
+
+    public boolean isFirst = true;
+    public boolean isSecond = false;
+
+    private boolean isEmpty = true;
 
 
     @Override
     public double getFirstNumber() {
-        return state.getFirstNumber();
+        return firstNumber;
     }
 
     @Override
     public double getSecondNumber() {
-        return state.getSecondNumber();
+
+        return secondNumber;
     }
+
     @Override
-    public char getOperator(){
-        return state.getOperator();
+    public char getOperator() {
+        return operator;
     }
+
     @Override
-    public double getResult(){
-        return state.getResult();
+    public double getResult() {
+        return result;
     }
+
     @Override
-    public boolean getIsFirst(){
-        return state.isFirst;
+    public boolean getIsFirst() {
+        return isFirst;
     }
+
     @Override
-    public boolean getIsSecond(){
-        return state.isSecond;
+    public boolean getIsSecond() {
+        return isSecond;
     }
-    @Override
-    public Calculator getEntireState(){
-        return state;
+
+    public void setState(Calculator state) {
+
+        this.firstNumber = state.getFirstNumber();
+        this.secondNumber =  state.getSecondNumber();
+        this.result = state.getResult();
+        this.operator = state.getOperator();
+        this.isSecond = state.isSecond;
+        this.isFirst = state.isFirst;
+        isEmpty = false;
     }
-    public void setState(Calculator state){
-        this.state = state;
+
+    public boolean isEmpty() {
+        return isEmpty;
     }
-    public boolean isEmpty(){
-        return state==null;
+
+    public void setFirstNumber(double firstNumber) {
+        this.firstNumber = firstNumber;
+    }
+
+    public void setSecondNumber(double secondNumber) {
+        this.secondNumber = secondNumber;
+    }
+
+    public void setResult(double result) {
+        this.result = result;
+    }
+
+    public void setOperator(char operator) {
+        this.operator = operator;
     }
 }

@@ -71,7 +71,7 @@ public class MessageCenter {
         //check memonto
         String mementoResult = "Empty";
         if(!memento.isEmpty()){
-            mementoResult = memento.getResult()+"";
+            mementoResult = instance.memento.getResult()+"";
         }
 
         switch (flag) {
@@ -91,17 +91,12 @@ public class MessageCenter {
                         double pi = PI.getValue();
                         if (calculator.isFirst) {
                             calculator.setFirstNumber(pi);
-                            calculator.isFirst = false;
                         } else {
                             calculator.setSecondNumber(pi);
-                            calculator.isSecond = true;
-                            calculator.calculate();
-
                         }
                         break;
                     case "c":
-                        calculator.clear();
-                        break;
+                        calculator.clear(); initScreen(); return;
                     case "m":
                         calculator.usePreviousResult(memento);
                         break;
@@ -110,12 +105,8 @@ public class MessageCenter {
                             double number = Double.parseDouble(instruction);
                             if (calculator.isFirst) {
                                 calculator.setFirstNumber(number);
-                                calculator.isFirst = false;
                             } else {
                                 calculator.setSecondNumber(number);
-                                calculator.isSecond = true;
-                                calculator.calculate();
-
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -173,14 +164,15 @@ public class MessageCenter {
         String finalInstruction = getInstractionFromConsule();
         switch (finalInstruction) {
             case "s":
-                calculator.backupState(memento);
+                calculator.backupState(instance.memento);
                 System.out.println("Save successful! <Press Enter to Continue>");
                 cin.nextLine();
-                instance.initScreen();
+                calculator.clear();
+                initScreen();
                 break;
             case "c":
                 calculator.clear();
-                instance.initScreen();
+                initScreen();
                 break;
             default:
                 System.out.println("Unknown option! <Press Enter to Continue>");
