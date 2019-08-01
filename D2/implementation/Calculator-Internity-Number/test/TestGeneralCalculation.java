@@ -1,3 +1,4 @@
+import domain.Calculator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +10,7 @@ public class TestGeneralCalculation {
     public void setUp(){
         calculator = new Calculator();
     }
-    
+
     @Test
     public void testAddition(){
         calculator.setFirstNumber(5);
